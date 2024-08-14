@@ -75,43 +75,43 @@
 // console.log(num);
 /*--------------------2------------------*/
 
-// let usersWithId = [
-//     {id: 1, name: 'vasya', age: 31, status: false},
-//     {id: 2, name: 'petya', age: 30, status: true},
-//     {id: 3, name: 'kolya', age: 29, status: true},
-//     {id: 4, name: 'olya', age: 28, status: false}
-// ];
-//
-// let citiesWithId = [
-//     {user_id: 3, country: 'USA', city: 'Portland'},
-//     {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
-//     {user_id: 2, country: 'Poland', city: 'Krakow'},
-//     {user_id: 4, country: 'USA', city: 'Miami'}
-// ];
-//
-// let usersWithCities = [];
-//
-// for (let i = 0; i < usersWithId.length; i++) {
-//     let usersWithCityElement = usersWithId[i];
-//     for (let j = 0; j < citiesWithId.length; j++) {
-//         let citiesWithIdElement = citiesWithId[j];
-//         if (usersWithCityElement.id === citiesWithIdElement.user_id) {
-//             let usersWithCitiesPart = {
-//                 id: usersWithCityElement.id,
-//                 name: usersWithCityElement.name,
-//                 age: usersWithCityElement.age,
-//                 status: usersWithCityElement.status,
-//                 address: {
-//                     user_id: citiesWithIdElement.user_id, // <===
-//                     country: citiesWithIdElement.country,
-//                     city: citiesWithIdElement.city
-//                 }
-//             }
-//             usersWithCities[usersWithCities.length] = usersWithCitiesPart;
-//         }
-//     }
-// }
-// console.log(usersWithCities);
+let usersWithId = [
+    {id: 1, name: 'vasya', age: 31, status: false},
+    {id: 2, name: 'petya', age: 30, status: true},
+    {id: 3, name: 'kolya', age: 29, status: true},
+    {id: 4, name: 'olya', age: 28, status: false}
+];
+
+let citiesWithId = [
+    {user_id: 3, country: 'USA', city: 'Portland'},
+    {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+    {user_id: 2, country: 'Poland', city: 'Krakow'},
+    {user_id: 4, country: 'USA', city: 'Miami'}
+];
+
+let usersWithCities = [];
+
+for (let i = 0; i < usersWithId.length; i++) {
+    let usersWithCityElement = usersWithId[i];
+    for (let j = 0; j < citiesWithId.length; j++) {
+        let citiesWithIdElement = citiesWithId[j];
+        if (usersWithCityElement.id === citiesWithIdElement.user_id) {
+            let usersWithCitiesPart = {
+                id: usersWithCityElement.id,
+                name: usersWithCityElement.name,
+                age: usersWithCityElement.age,
+                status: usersWithCityElement.status,
+                address: {
+                    user_id: citiesWithIdElement.user_id, // <===
+                    country: citiesWithIdElement.country,
+                    city: citiesWithIdElement.city
+                }
+            }
+            usersWithCities[usersWithCities.length] = usersWithCitiesPart;
+        }
+    }
+}
+console.log(usersWithCities);
 
 /*--------------------3------------------*/
 
