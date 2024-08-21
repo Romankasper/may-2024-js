@@ -111,34 +111,34 @@
 // - всі трефи від 9 та більше
 
 
-// let suits = ['heart', 'spade', 'diamond', 'club'];
-// let value = ['6', '7', '8', '9', '10', 'jack', 'queen', 'king', 'ace'];
-//
-// let cards = [];
-//
-// for (let string of suits) {
-//     for (let string1 of value) {
-//         let card = {CardSuit: string, value: string1,};
-//         if (string === 'heart' || string === 'diamond'){
-//             card.color = 'red';
-//         }else{
-//             card.color = 'black';
-//         }
-//         cards.push(card)
-//     }
-// }
+let suits = ['heart', 'spade', 'diamond', 'club'];
+let value = ['6', '7', '8', '9', '10', 'jack', 'queen', 'king', 'ace'];
 
-// console.log(cards);
-//
-// console.log(cards.find(card => card.CardSuit === 'spade' && card.value === 'ace'));
-//
-// console.log(cards.filter(card => card.value === '6'));
-//
-// console.log(cards.filter(card => card.color === 'red'));
-//
-// console.log(cards.filter(card => card.CardSuit === 'diamond'));
-//
-// console.log(cards.filter(card => card.CardSuit === 'club' && card.value !== '6' && card.value !== '7' && card.value !== '8'));
+let cards = [];
+
+for (let string of suits) {
+    for (let string1 of value) {
+        let card = {CardSuit: string, value: string1,};
+        if (string === 'heart' || string === 'diamond'){
+            card.color = 'red';
+        }else{
+            card.color = 'black';
+        }
+        cards.push(card)
+    }
+}
+
+console.log(cards);
+
+console.log(cards.find(card => card.CardSuit === 'spade' && card.value === 'ace'));
+
+console.log(cards.filter(card => card.value === '6'));
+
+console.log(cards.filter(card => card.color === 'red'));
+
+console.log(cards.filter(card => card.CardSuit === 'diamond'));
+
+console.log(cards.filter(card => card.CardSuit === 'club' && card.value !== '6' && card.value !== '7' && card.value !== '8'));
 
 /*--------------------10------------------*/
 // Взяти описану колоду карт, та за допомоги reduce упакувати всі карти по "мастях" в об'єкт
