@@ -75,7 +75,6 @@
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 
 
-
 // function Cars (model, manufacturer, yearOfManufacture, maximumSpeed, engineCapacity){
 //     this.model = model;
 //     this.manufacturer = manufacturer;
@@ -87,7 +86,7 @@
 //     }
 //     this.info = function (){
 //         for (let modelKey in this) {
-//             if (typeof this[modelKey] !== "function"){
+//             if ( typeof this[modelKey] !== "function"){
 //                console.log(`${modelKey} - ${this[modelKey]}`)
 //             }
 //         }
@@ -236,7 +235,6 @@
 // ];
 // let result =arr.myFilter( (x) => x.age>20 );
 // console.log(result);
-
 
 
 // Array.prototype.myForEach = function (a){
